@@ -10,11 +10,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
 @Table(name = "movies")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Movie implements Serializable {
 	private static final long serialVersionUID = 1L;
 
